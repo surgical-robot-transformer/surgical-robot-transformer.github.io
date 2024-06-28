@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Surgical Robot Transformer (SRT): Imitation Learning for Surgical Subtasks">
-  <meta name="keywords" content="Robotics, Manipulation, Medical Robotics">
+  <meta name="description" content="Surgcal Robot Transformer: Imitation Learning for Surgical Subtasks">
+  <meta name="keywords" content="Surgical Robotics, Bimanual Manipulation, Imitation Learning, Transformer, Deep Learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Surgical Robot Transformer</title>
+  <title>Surgical RT</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -24,27 +24,27 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 
-  <link rel="icon" href="todo">
+  <link rel="icon" href="./favicon.ico">
 
-  <meta property="og:site_name" content="Surgical Robot Transformer (SRT): Imitation Learning for Surgical Subtasks" />
+  <meta property="og:site_name" content="Surgcal Robot Transformer: Imitation Learning for Surgical Subtasks" />
   <meta property="og:type" content="video.other" />
-  <meta property="og:title" content="Surgical Robot Transformer (SRT): Imitation Learning for Surgical Subtasks" />
-  <meta property="og:description" content="by anonymous" />
-  <meta property="og:url" content="todo" />
-  <meta property="og:image" content="todo" />
-  <meta property="og:image:secure" content="todo" />
+  <meta property="og:title" content="Surgcal Robot Transformer: Imitation Learning for Surgical Subtasks" />
+  <meta property="og:description" content="by Ji Woong Kim, Tony Zhao, Sam Schmidgall, Anton Deguet, Marin Kobilarov, Chelsea Finn,and Axel Krieger at JHU & Stanford" />
+  <meta property="og:url" content="https://surgical-robot-transformer.github.io/" />
+  <meta property="og:image" content="https://surgical-robot-transformer/static/images/preview_srt.gif" />
+  <meta property="og:image:secure" content="https://surgical-robot-transformer/static/images/preview_srt.gif" />
   <meta property="og:video" content="" />
   <meta property="og:video:secure" content="" />
   <meta property="og:image:width" content="1280" />
   <meta property="og:image:height" content="720" />
 
-  <meta property="article:publisher" content="todo" />
+  <meta property="article:publisher" content="https://surgical-robot-transformer.github.io" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Surgical Robot Transformer (SRT): Imitation Learning for Surgical Subtasks" />
-  <meta name="twitter:description" content="by anonymous" />
-  <meta name="twitter:url" content="todo" />
-  <meta name="twitter:image" content="todo" />
-  <meta name="twitter:site" content="todo" />
+  <meta name="twitter:title" content="Surgcal Robot Transformer: Imitation Learning for Surgical Subtasks" />
+  <meta name="twitter:description" content="by Ji Woong Kim, Tony Zhao, Sam Schmidgall, Anton Deguet, Marin Kobilarov, Chelsea Finn,and Axel Krieger at JHU & Stanford" />
+  <meta name="twitter:url" content="https://surgical-robot-transformer.github.io/" />
+  <meta name="twitter:image" content="https://surgical-robot-transformer.github.io/static/images/preview_srt.gif" />
+  <meta name="twitter:site" content="@jwbkim" />
   <meta name="twitter:card" content="player" />
   <meta name="twitter:player" content="" />
   <meta name="twitter:player:width" content="1280" />
@@ -61,13 +61,135 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-two-thirds is-centered has-text-centered">
-          <h1 class="title is-1 publication-title">Surgical Robot Transformer (SRT)</h1>
+          <h1 class="title is-1 publication-title">Surgical Robot Transformer:</h1>
           <h2 class="subtitle is-2 publication-subtitle">Imitation Learning for Surgical Subtasks</h2>
+          <!-- <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a href="https://sites.google.com/view/jkimrobot/home">Ji Woong (Brian) Kim</a>&nbsp;&nbsp;&nbsp;
+              <a href="https://tonyzhaozh.github.io/">Tony Z. Zhao</a>&nbsp;&nbsp;&nbsp;
+              <a href="https://samuelschmidgall.github.io/">Sam Schmidgall</a>&nbsp;&nbsp;&nbsp;
+              <a href="https://malonecenter.jhu.edu/people/anton-deguet/">Anton Deguet</a>&nbsp;&nbsp;&nbsp;
+              <a href="https://me.jhu.edu/faculty/marin-kobilarov/" style="white-space: nowrap;">Marin Kobilarov</a>&nbsp;&nbsp;&nbsp;
+              <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>&nbsp;&nbsp;&nbsp;
+              <a href="https://engineering.jhu.edu/faculty/axel-krieger/">Axel Krieger</a>&nbsp;&nbsp;&nbsp;
+            </span>
+          </div> -->
+          <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
+            <img src="./static/images/logo_jh.jpg" alt="Johns Hopkins Logo" style="width: 40%;">
+            <img src="./static/images/logo_stanford.jpg" alt="Secondary Logo" style="width: 50%;">
+          </div>
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="TODO"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="TODO"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+                  </span>
+                  <span>Code (coming soon)</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-two-thirds has-text-centered">
+            <video controls autoplay loop muted playsinline style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+              <source src="./resources/tasks/teaser.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <!-- Main column taking two-thirds of the page width -->
+      <div class="column is-two-thirds">
+        <h2 class="title is-2" style="text-align: center;">Authors</h2>
+        <!-- First Row with Four Authors -->
+        <div class="columns is-centered">
+          <div class="column is-3 has-text-centered">
+            <a href="https://sites.google.com/view/jkimrobot/home" target="_blank">
+              <img src="./static/images/jwk.jpeg" alt="Ji Woong (Brian) Kim" style="width: 60%;">
+              <br>
+              <span style="font-weight: bold; font-size: 130%;">Ji Woong (Brian) Kim</span>
+            </a>
+          </div>
+          <div class="column is-3 has-text-centered">
+            <a href="https://tonyzhaozh.github.io/" target="_blank">
+              <img src="./static/images/TonyZhao.jpeg" alt="Tony Z. Zhao" style="width: 80%;">
+              <br>
+              <span style="font-weight: bold; font-size: 130%;">Tony Z. Zhao</span>
+            </a>
+          </div>
+          <div class="column is-3 has-text-centered">
+            <a href="https://samuelschmidgall.github.io/" target="_blank">
+              <img src="./static/images/sam.jpeg" alt="Samuel Schmidgall" style="width: 77%;">
+              <br>
+              <span style="font-weight: bold; font-size: 130%;">Samuel Schmidgall</span>
+            </a>
+          </div>
+          <div class="column is-3 has-text-centered">
+            <a href="https://malonecenter.jhu.edu/people/anton-deguet/" target="_blank">
+              <img src="./static/images/anton.jpg" alt="Anton Deguet" style="width: 80%;">
+              <br>
+              <span style="font-weight: bold; font-size: 130%;">Anton Deguet</span>
+            </a>
+          </div>
+        </div>
+        <!-- Second Row with Three Authors -->
+        <div class="columns is-centered">
+          <div class="column is-4 has-text-centered">
+            <a href="https://me.jhu.edu/faculty/marin-kobilarov/" target="_blank">
+              <img src="./static/images/marin.jpg" alt="Marin Kobilarov" style="width: 60%;">
+              <br>
+              <span style="font-weight: bold; font-size: 130%;">Marin Kobilarov</span>
+            </a>
+          </div>
+          <div class="column is-4 has-text-centered">
+            <a href="https://ai.stanford.edu/~cbfinn/" target="_blank">
+              <img src="./static/images/ChelseaFinn.jpeg" alt="Chelsea Finn" style="width: 60%;">
+              <br>
+              <span style="font-weight: bold; font-size: 130%;">Chelsea Finn</span>
+            </a>
+          </div>
+          <div class="column is-4 has-text-centered">
+            <a href="https://engineering.jhu.edu/faculty/axel-krieger/" target="_blank">
+              <img src="./static/images/axel.jpg" alt="Axel Krieger" style="width: 60%;">
+              <br>
+              <span style="font-weight: bold; font-size: 130%;">Axel Krieger</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
 
 <section class="section">
   <div class="container">
@@ -80,12 +202,12 @@
             We explore whether surgical manipulation tasks can be learned on the da Vinci robot via imitation learning.
             However, the da Vinci system presents unique challenges which hinder straight-forward implementation of imitation learning. 
             Notably, its forward kinematics is inconsistent due to imprecise joint measurements, and naively training a policy
-             using such approximate kinematics data often leads to task failure. To overcome this limitation, we introduce 
-             a relative action formulation which enables successful policy training and deployment using its approximate 
-             kinematics data. A promising outcome of this approach is that the large repository of clinical data, which 
-             contains approximate kinematics, may be directly utilized for robot learning without further corrections. 
-             We demonstrate our findings through successful execution of three fundamental surgical tasks, including tissue manipulation, 
-             needle handling, and knot-tying.
+            using such approximate kinematics data often leads to task failure. To overcome this limitation, we introduce 
+            a relative action formulation which enables successful policy training and deployment using its approximate 
+            kinematics data. A promising outcome of this approach is that the large repository of clinical data, which 
+            contains approximate kinematics, may be directly utilized for robot learning without further corrections. 
+            We demonstrate our findings through successful execution of three fundamental surgical tasks, including tissue manipulation, 
+            needle handling, and knot-tying.
           </p>
         </div>
       </div>
@@ -99,25 +221,22 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
-          <p>
-            The videos below show results for the policy trained using the hybrid-relative action representation, unless otherwise noted.
-          </p>
         </div>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/tasks/davinci_manipulation_v2_m1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/tasks/m1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/tasks/davinci_manipulation_v2_m2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/tasks/m2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/tasks/davinci_manipulation_v2_m3.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/tasks/m3.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
   </div>
@@ -128,12 +247,12 @@
     <h2 class="title is-2" style="text-align: center;">Zero-Shot Generalization</h2>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/tasks/davinci_manipulation_v2_m6.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/tasks/m6_simple_caption.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/tasks/davinci_manipulation_v2_m13.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/tasks/m7_simple_caption.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
   </div>
@@ -144,12 +263,12 @@
     <h2 class="title is-2" style="text-align: center;">Retry Behavior</h2>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/tasks/davinci_manipulation_v2_m4.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/tasks/m4.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/tasks/davinci_manipulation_v2_m5.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/tasks/m5.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
   </div>
@@ -161,17 +280,17 @@
     <h2 class="title is-2" style="text-align: center;">Repeatability Tests</h2>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/tasks/davinci_manipulation_v2_m10.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/tasks/m8.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/tasks/davinci_manipulation_v2_m11.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/tasks/m9.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/tasks/davinci_manipulation_v2_m12.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/tasks/m10.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
   </div>
@@ -179,15 +298,105 @@
 
 <section class="section">
   <div class="container">
-    <h2 class="title is-2" style="text-align: center;">Baseline Results</h2>
+    <h2 class="title is-2" style="text-align: center;">Overview</h2>
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
           <p>
+            We explore whether surgical manipulation tasks can be learned on the da Vinci Research Kit (dVRK) system via imitation learning.
+            We consider three tasks for automation, including lifting tissue, needle pickup and handover, and suture knot-tying, as shown below. We also
+            explore the use of wrist cameras and evaluate their impact on performance.
+          </p>
+          <!-- Example of how to insert an image -->
+          <img src="resources/imgs/intro_fig.jpg" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
+          <!-- You can add more <img> tags as needed -->
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            However, robot learning on the da Vinci presents unique challenges. The hardware suffers from inaccurate forward kinematics due 
+            to potentiometer-based joint measurements, hysteresis, and overall flexibility and slack in its mechanism. 
+            These limitations result in the robot's failure to perform simple visual-servoing tasks. As we discover in this work, 
+            naively training a policy using such approximate kinematic data almost always leads to task failure. For instance, a policy 
+            trained to output absolute end-effector poses, which is a common approach to train robot policies, achieves near-zero success 
+            rates across all tasks. 
+          </p>
+        </div>
+        
+        <!-- <div class="content has-text-justified">
+          <p>
+            More concretely, as shown below, each arm is a sequential combination of set-up joints which are passive, 
+            followed by active joints which are motorized. The passive joints are notoriously inaccurate due to using only potentiometers for joint
+            measurements. The active joints use both potentiometers and motor encoders, providing improved precision. However, in general, 
+            the use of potentiometers throughout all the joints causes the forward kinematics of the arms to be inaccurate, even up to 5cm error.
+          
+            Over the years, Intuitive has improved their design by adding better encoders to the set-up joints as well. However, the improvement
+            only affects the da Vinci Xi generation, while the past genertions, including da Vinci classic, S, and Si, remain affected.  
+          </p>
+          <img src="resources/imgs/robot_fig_v16.jpg" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
+        </div> -->
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Approach</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+          <p>
+          We find that the relative motion of the da Vinci system is much more reliable than its absolute forward kinematics.
+          We thus model the policy actions as relative motion, and further explore its variants to design the best action
+          representation for the da Vinci. We consider three options as shown below: camera-centric, tool-centric, and hybrid-relative actions.
+          The camera-centric action representation is a baseline approach which models actions as absolute poses of the end-effectors, 
+          while the other two are relative formulations defining actions with respect to the current tool (i.e. end-effector) frame or the endoscope tip frame.
+          </p>
+          <!-- Example of how to insert an image -->
+          <img src="resources/imgs/action_rep.jpg" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
+          <!-- You can add more <img> tags as needed -->
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            We then train a policy using images as input and the above action representations. We do not use
+            kinematics data as input, as done in many prior works, since the kinematics data of the da Vinci can be unreliable.
+            We base our model on <a href="https://github.com/tonyzhaozh/act">ACT</a>, a transformer-based architecture.
+
+          </p>
+          <!-- Example of how to insert an image -->
+          <img src="resources/imgs/policy_fig.jpg" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
+          <!-- You can add more <img> tags as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Results</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+
+        <div class="content has-text-justified">
+          <p>
+          Our results show that relative action formulations perform well (tool-centric and hybrid-relative action representations), and that 
+          wrist cameras can provide to significant performance gains in learning surgical manipulation tasks.
+          </p>
+          <!-- Example of how to insert an image -->
+          <img src="resources/imgs/table_results.JPG" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
+          <!-- You can add more <img> tags as needed -->
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
             The videos below show results for policy trained using the camera-centric action representation, which is the baseline approach. 
-            The camera-centric action representation models policy actions as absolute end-effector poses with respect to the endoscope tip.
+            Recall that the camera-centric action representation models policy actions as absolute end-effector poses.
             In other words, the policy is trained to move the end-effectors to absolute waypoints in the workspace. However, due to errors in the forward kinematics 
-            of the da Vinci arms, which change whenever the set-up joints are repositioned, the absolute waypoints are no longer the same locations 
+            of the da Vinci arms, the absolute waypoints are no longer the same locations 
             the model encountered durining training. This issue leads to task failures across all tasks. All videos are 2X speed.
           </p>
         </div>
@@ -210,6 +419,43 @@
     </div>
   </div>
 </section>
+
+<!-- <section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Acknowledgements</h2>
+        <div class="content has-text-justified">
+          <p>
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <h2 class="titile">BibTeX</h2>
+    <pre><code>@inproceedings{Coming soon,
+  author    = {},
+  title     = {},
+  booktitle = {},
+  year      = {},
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a>, 
+        <a href="https://robot-parkour.github.io/"><span class="dnerf">Robot-Parkour</span></a>,
+        and <a href="https://mobile-aloha.github.io/"><span class="dnerf">Mobile-Aloha</span></a>.</p>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
