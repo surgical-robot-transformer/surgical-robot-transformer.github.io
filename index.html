@@ -387,9 +387,10 @@
         <div class="content has-text-justified">
           <p>
           We first evaluate whether relative motion on the da Vinci is more consistent than its absolute forward kinematics.
-          This is evaluated by repeating a recorded reference trajectory using absolute vs relative action formulation, under various robot configurations.
-          Further experiment details and results are shown in the figure and table below. Overall, our experiments show that in the presence of joint 
-          measurement errors, relative motion can more faithfully reconstruct the reference trajectory.
+          This is evaluated by repeating a recorded reference trajectory using absolute vs relative action formulation under various robot configurations.
+          Overall, our experiments show that in the presence of joint measurement errors, relative motion is more consistent. 
+          Therefore, modeling policy actions as relative motion is a better choice. More experiment details and results can be found in the below
+          figure and table.
           </p>
           <!-- Example of how to insert an image -->
           <img src="resources/imgs/repeatability_fig_captions.JPG" alt="Descriptive text about the image" style="max-width: 100%; height: auto; margin-bottom: 20px;">
@@ -399,9 +400,10 @@
 
         <div class="content has-text-justified">
           <p>
-          We also evaluate the task success rates of our models. Our results show that relative action formulations perform well 
-          (tool-centric and hybrid-relative action representations). We also observe that wrist cameras can provide to significant 
-          performance gains in learning surgical manipulation tasks.
+          We also evaluate the task success rates of our models trained using the various action representations. 
+          Our results show that policies trained using relative action formulations perform well (tool-centric and hybrid-relative action representations),
+          while policies trained using absolute forward kinematics fails. 
+          We also observe that wrist cameras can provide to significant performance gains in learning surgical manipulation tasks.
           </p>
           <!-- Example of how to insert an image -->
           <img src="resources/imgs/table_results.JPG" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
