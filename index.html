@@ -316,7 +316,9 @@
           <p>
             However, robot learning on the da Vinci presents unique challenges. The hardware suffers from inaccurate forward kinematics due 
             to potentiometer-based joint measurements, hysteresis, and overall flexibility and slack in its mechanism. 
-            These limitations result in the robot's failure to perform simple visual-servoing tasks. As we discover in this work, 
+            These limitations result in the robot's failure to perform simple visual-servoing tasks 
+            (see <a href="https://sites.google.com/berkeley.edu/surgical-calibration">[1]</a> 
+            , <a href="https://arxiv.org/abs/2210.13598">[2]</a>). As we discover in this work, 
             naively training a policy using such approximate kinematic data almost always leads to task failure. For instance, a policy 
             trained to output absolute end-effector poses, which is a common approach to train robot policies, achieves near-zero success 
             rates across all tasks. 
@@ -348,11 +350,12 @@
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
           <p>
-          We find that the relative motion of the da Vinci system is much more reliable than its absolute forward kinematics.
-          We thus model the policy actions as relative motion, and further explore its variants to design the best action
+          We find that the relative motion of the da Vinci system is much more consistent than its absolute forward kinematics.
+          We thus model the policy actions as relative motion, and further explore its variants to design the most effective action
           representation for the da Vinci. We consider three options as shown below: camera-centric, tool-centric, and hybrid-relative actions.
-          The camera-centric action representation is a baseline approach which models actions as absolute poses of the end-effectors, 
-          while the other two are relative formulations defining actions with respect to the current tool (i.e. end-effector) frame or the endoscope tip frame.
+          The camera-centric action representation is a baseline approach which models actions as absolute poses of the end-effectors with respect
+          to the endoscope tip. 
+          The other two are relative formulations defining actions with respect to the current tool (i.e. end-effector) frame or the endoscope tip frame.
           </p>
           <!-- Example of how to insert an image -->
           <img src="resources/imgs/action_rep.jpg" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
@@ -362,7 +365,7 @@
         <div class="content has-text-justified">
           <p>
             We then train a policy using images as input and the above action representations. We do not use
-            kinematics data as input, as done in many prior works, since the kinematics data of the da Vinci can be unreliable.
+            kinematics data as input as done in many prior works, since the kinematics data of the da Vinci can be unreliable.
             We base our model on <a href="https://github.com/tonyzhaozh/act">ACT</a>, a transformer-based architecture.
 
           </p>
@@ -383,8 +386,22 @@
 
         <div class="content has-text-justified">
           <p>
-          Our results show that relative action formulations perform well (tool-centric and hybrid-relative action representations), and that 
-          wrist cameras can provide to significant performance gains in learning surgical manipulation tasks.
+          We first evaluate whether relative motion on the da Vinci is more consistent than its absolute forward kinematics.
+          This is evaluated by repeating a recorded reference trajectory using absolute vs relative action formulation, under various robot configurations.
+          Further experiment details and results are shown in the figure and table below. Overall, our experiments show that in the presence of joint 
+          measurement errors, relative motion can more faithfully reconstruct the reference trajectory.
+          </p>
+          <!-- Example of how to insert an image -->
+          <img src="resources/imgs/repeatability_fig_captions.JPG" alt="Descriptive text about the image" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+          <img src="resources/imgs/table_repeatability.JPG" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
+          <!-- You can add more <img> tags as needed -->
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+          We also evaluate the task success rates of our models. Our results show that relative action formulations perform well 
+          (tool-centric and hybrid-relative action representations). We also observe that wrist cameras can provide to significant 
+          performance gains in learning surgical manipulation tasks.
           </p>
           <!-- Example of how to insert an image -->
           <img src="resources/imgs/table_results.JPG" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
