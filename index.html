@@ -402,8 +402,9 @@
           <p>
           We also evaluate the task success rates of our models trained using the various action representations. 
           Our results show that policies trained using relative action formulations perform well (tool-centric and hybrid-relative action representations),
-          while policies trained using absolute forward kinematics fail. 
-          We also observe that wrist cameras can provide significant performance gains in learning surgical manipulation tasks.
+          while policies trained using absolute forward kinematics fail. The successful policy rollouts by the hybrid-relative action formulation is shown 
+          in the series of videos above. We also observe that wrist cameras can provide significant performance gains in learning surgical manipulation 
+          tasks.
           </p>
           <!-- Example of how to insert an image -->
           <img src="resources/imgs/table_results.JPG" alt="Descriptive text about the image" style="max-width: 100%; height: auto;">
@@ -412,7 +413,7 @@
 
         <div class="content has-text-justified">
           <p>
-            The videos below show the results for policy trained using the absolute forward kinematics of the arms (camera-centric actions).
+            The videos below show the results for policy trained using the absolute forward kinematics of the arms (camera-centric actions), which is the baseline approach.
             Due to the errors in the da Vinci arm foward kinematics, which can change significantly between training and inference,
             the policies fail to complete the tasks. All videos are 2X speed.
           </p>
