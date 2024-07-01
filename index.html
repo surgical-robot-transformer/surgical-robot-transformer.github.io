@@ -412,11 +412,9 @@
 
         <div class="content has-text-justified">
           <p>
-            The videos below show results for policy trained using the camera-centric action representation, which is the baseline approach. 
-            Recall that the camera-centric action representation models policy actions as absolute end-effector poses.
-            In other words, the policy is trained to move the end-effectors to absolute waypoints in the workspace. However, due to errors in the forward kinematics 
-            of the da Vinci arms, the absolute waypoints are no longer the same locations 
-            the model encountered durining training. This issue leads to task failures across all tasks. All videos are 2X speed.
+            The videos below show the results for policy trained using absolute forward kinemtics of the arms (camera-centric actions).
+            Due to the errors in the da Vinci arm foward kinematics, which can change significantly between training and inferene,
+            the policies fail to complete the tasks. All videos are 2X speed.
           </p>
         </div>
       </div>
